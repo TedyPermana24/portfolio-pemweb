@@ -326,6 +326,54 @@ footer{
     text-align: center;
 }
 
+@media (max-width : 1920px){
+    .wrapper{
+        padding: 0 0;
+    }
+
+    .personal-texts .paragraph-me{
+        padding: 0.5rem 12rem 0 0;
+    }
+    
+
+    .about,.portfolio,.contact-me .container{
+        margin: 2rem 25rem;
+    }
+
+    .body-wrapper, .about,.portfolio .container{
+        height: 70vh;
+    }
+
+    .contact-me .container{
+        height: 5vh;
+        padding-top: 6rem;
+    }
+}
+
+@media (max-width : 1440px){
+    .wrapper{
+        padding: 0 0;
+    }
+
+    .personal-texts .paragraph-me{
+        padding: 0.5rem 5rem 0 0;
+    }
+    
+
+    .about,.portfolio,.contact-me .container{
+        margin: 2rem 10rem;
+    }
+
+    .body-wrapper, .about,.portfolio .container{
+        height: 80vh;
+    }
+
+    .contact-me .container{
+        height: 5vh;
+        padding-top: 6rem;
+    }
+}
+
 @media (max-width : 1024px){
     .wrapper{
         padding: 0 0;
@@ -341,11 +389,12 @@ footer{
     }
 
     .body-wrapper, .about,.portfolio .container{
-        height: 120vh;
+        height: 90vh;
     }
 
     .contact-me .container{
-        height: 40vh;
+        height: 5vh;
+        padding-top: 5rem;
     }
 }
 
@@ -369,14 +418,110 @@ footer{
     }
 
     .body-wrapper, .about, .container{
-        height: 160vh;
+        height: 110vh;
     }
 
     .portfolio .container{
-        height: 130vh;
+        height: 80vh;
     }
 
     .contact-me .container{
         height: 20vh;
     }
-}
+
+    @media (max-width : 768px){
+    .wrapper{
+        padding: 0 0;
+    }
+
+    .body-wrapper .container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .personal-texts , .personal-texts p, .personal-texts .paragraph-me{
+        padding: 1rem 2rem 0 2rem;
+        text-align: center;
+    }
+
+    .about,.portfolio,.contact-me .container{
+        margin: 2rem 0;
+    }
+
+    .body-wrapper, .about, .container{
+        height: 110vh;
+    }
+
+    .portfolio .container{
+        height: 80vh;
+    }
+
+    .contact-me .container{
+        height: 20vh;
+    }
+
+    }
+
+    @media (max-width : 425px){
+        .wrapper{
+            padding: 0 0;
+        }
+
+        .container{
+            margin: 0 1rem;
+        }
+    
+        .body-wrapper .container{
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+
+        .about .container .about-grid{
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+
+        .about .about-text{
+           padding: 1rem 2rem;
+        }
+
+        .about .right-side{
+            padding: 1rem 2rem;
+         }
+        
+        .portfolio .work-list{
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            padding: 1rem 0;
+        }
+
+        .contact-me .contact-details{
+            display: block;
+        }
+    
+        .personal-texts , .personal-texts p, .personal-texts .paragraph-me{
+            text-align: center;
+            padding: 0,5rem 1rem;
+        }
+    
+        .about,.portfolio,.contact-me .container{
+            margin: 2rem 0;
+        }
+    
+        .body-wrapper, .about, .container{
+            height: 130vh;
+        }
+
+        .portfolio .container{
+            height: 150vh;
+        }
+    
+        .contact-me .container{
+            height: 20vh;
+        }
+
+        .contact-me .contact-details{
+            justify-content: space-between;
+        }
+    
+        }
