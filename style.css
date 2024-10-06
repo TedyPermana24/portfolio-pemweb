@@ -4,6 +4,10 @@
     font-family: Poppins;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .wrapper{
     padding: 5px 0;
 }
@@ -47,9 +51,9 @@ header a:hover {
 .body-wrapper .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-top : 12rem;
+    padding : 20rem 0 10rem 0;
     justify-items: center;
-    height: 80vh;
+    height: auto;
     gap: 10px;
 }
 
@@ -107,7 +111,8 @@ header a:hover {
 }
 
 .about .container{
-    height: 100vh;
+    height: auto;
+    padding-top : 15rem;
 }
 
 .about .about-header{
@@ -168,6 +173,11 @@ header a:hover {
     border: 2px solid #a855f7;
 }
 
+.portfolio .container{
+    height: auto;
+    padding-top : 15rem;
+}
+
 .portfolio .portfolio-header{
     display: flex;
     align-items: center;
@@ -190,7 +200,6 @@ header a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    height: 100vh;
     margin-top: 2rem;
     gap: 50px;
 }
@@ -294,8 +303,9 @@ header a:hover {
     width: 90%;
 }
 
-.contact-me{
-    height: 60vh;
+.contact-me .container{
+    height: auto;
+    padding : 15rem 0;
 }
 
 .contact-header{
@@ -326,29 +336,28 @@ footer{
     text-align: center;
 }
 
+footer svg{
+    width: 20px;
+    height: 15px;
+}
+
 @media (max-width : 1920px){
     .wrapper{
         padding: 0 0;
     }
 
     .personal-texts .paragraph-me{
-        padding: 0.5rem 12rem 0 0;
+        padding: 0.5rem 20rem 0 0;
     }
     
+    .body-wrapper, .about, .portfolio, .contact-me .container{
+        height: fit-content;
+    }
 
     .about,.portfolio,.contact-me .container{
-        margin: 2rem 25rem;
-    }
-
-    .body-wrapper, .about, .container{
-        height: 80vh;
+        margin: 2rem 20rem;
     }
     
-
-    .contact-me .container{
-        height: 5vh;
-        padding-top: 6rem;
-    }
 }
 
 @media (max-width : 1506px){
@@ -360,46 +369,35 @@ footer{
         padding: 0.5rem 5rem 0 0;
     }
     
+    .body-wrapper, .about, .portfolio, .contact-me .container{
+        height: fit-content;
+    }
 
     .about,.portfolio,.contact-me .container{
         margin: 2rem 10rem;
     }
-
-    .body-wrapper, .about,.portfolio .container{
-        height: 70vh;
-    }
-
-    .contact-me .container{
-        height: 5vh;
-        padding-top: 6rem;
-    }
+    
 }
 
-@media (max-width : 1114px){
+@media (max-width : 1300px){
     .wrapper{
         padding: 0 0;
     }
 
     .personal-texts .paragraph-me{
-        padding: 0.5rem 5rem 0 0;
+        padding: 0.5rem 10rem 0 0;
     }
-    
 
     .about,.portfolio,.contact-me .container{
         margin: 0 0; 
     }
 
-    .body-wrapper, .about,.portfolio .container{
-        height: 60vh;
-    }
-
-    .contact-me .container{
-        height: 5vh;
-        padding-top: 5rem;
+    .body-wrapper, .about, .portfolio, .contact-me .container{
+        height: fit-content;
     }
 }
 
-@media (max-width : 922px){
+@media (max-width : 1150px){
     .wrapper{
         padding: 0 0;
     }
@@ -418,27 +416,37 @@ footer{
         margin: 2rem 0;
     }
 
-    .body-wrapper, .about, .container{
-        height: 100vh;
+
+    .body-wrapper, .about, .portfolio, .contact-me .container{
+        height: fit-content;
     }
 
-    .portfolio .container{
-        height: 80vh;
-    }
-
-    .contact-me .container{
-        height: 20vh;
-    }
 }
 
-@media (max-width : 425px){
+@media (max-width : 700px){
     .wrapper{
         padding: 0 0;
     }
 
-    .body-wrapper .container{
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
+    .about .about-grid{
+        display: block;
+    }
+
+    .portfolio .work-list{
+        display: block;
+    }
+
+    .portfolio .work-list .work-right-all{
+        padding: 4rem 0;
+    }
+
+    .about .about-grid .left-side .about-text{
+        padding: 2rem 0.5rem;
+    }
+
+
+    .about .about-grid .right-side{
+        padding: 1rem 0.5rem;
     }
 
     .personal-texts , .personal-texts p, .personal-texts .paragraph-me{
@@ -450,16 +458,18 @@ footer{
         margin: 2rem 0;
     }
 
-    .body-wrapper, .about, .container{
-        height: 120vh;
+    .body-wrapper, .about, .portfolio, .contact-me .container{
+        height: fit-content;
     }
 
-    .portfolio .container{
-        height: 80vh;
+    .contact-me .container .contact-details{
+        display: block;
+        text-align: center;
+        padding: 1rem 0;
     }
 
-    .contact-me .container{
-        height: 20vh;
+
+    .gmail, .phone, .place{
+        padding: 1rem 0;
     }
 }
-
