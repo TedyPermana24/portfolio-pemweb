@@ -51,7 +51,7 @@ header a:hover {
 .body-wrapper .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding : 20rem 0 10rem 0;
+    padding-top : 10rem;
     justify-items: center;
     height: auto;
     gap: 10px;
@@ -112,7 +112,7 @@ header a:hover {
 
 .about .container{
     height: auto;
-    padding-top : 15rem;
+    padding-top : 10rem;
 }
 
 .about .about-header{
@@ -175,7 +175,7 @@ header a:hover {
 
 .portfolio .container{
     height: auto;
-    padding-top : 15rem;
+    padding-top : 10rem;
 }
 
 .portfolio .portfolio-header{
@@ -305,7 +305,7 @@ header a:hover {
 
 .contact-me .container{
     height: auto;
-    padding : 15rem 0;
+    padding : 10rem 0;
 }
 
 .contact-header{
