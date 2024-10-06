@@ -340,9 +340,10 @@ footer{
         margin: 2rem 25rem;
     }
 
-    .body-wrapper, .about,.portfolio .container{
-        height: 70vh;
+    .body-wrapper, .about, .container{
+        height: 80vh;
     }
+    
 
     .contact-me .container{
         height: 5vh;
@@ -350,7 +351,7 @@ footer{
     }
 }
 
-@media (max-width : 1440px){
+@media (max-width : 1506px){
     .wrapper{
         padding: 0 0;
     }
@@ -365,7 +366,7 @@ footer{
     }
 
     .body-wrapper, .about,.portfolio .container{
-        height: 80vh;
+        height: 70vh;
     }
 
     .contact-me .container{
@@ -374,7 +375,7 @@ footer{
     }
 }
 
-@media (max-width : 1024px){
+@media (max-width : 1114px){
     .wrapper{
         padding: 0 0;
     }
@@ -385,11 +386,11 @@ footer{
     
 
     .about,.portfolio,.contact-me .container{
-        margin: 2rem 2rem;
+        margin: 0 0; 
     }
 
     .body-wrapper, .about,.portfolio .container{
-        height: 90vh;
+        height: 60vh;
     }
 
     .contact-me .container{
@@ -398,7 +399,7 @@ footer{
     }
 }
 
-@media (max-width : 768px){
+@media (max-width : 922px){
     .wrapper{
         padding: 0 0;
     }
@@ -418,7 +419,7 @@ footer{
     }
 
     .body-wrapper, .about, .container{
-        height: 110vh;
+        height: 100vh;
     }
 
     .portfolio .container{
@@ -428,8 +429,9 @@ footer{
     .contact-me .container{
         height: 20vh;
     }
+}
 
-    @media (max-width : 768px){
+@media (max-width : 425px){
     .wrapper{
         padding: 0 0;
     }
@@ -449,7 +451,7 @@ footer{
     }
 
     .body-wrapper, .about, .container{
-        height: 110vh;
+        height: 120vh;
     }
 
     .portfolio .container{
@@ -459,69 +461,5 @@ footer{
     .contact-me .container{
         height: 20vh;
     }
+}
 
-    }
-
-    @media (max-width : 425px){
-        .wrapper{
-            padding: 0 0;
-        }
-
-        .container{
-            margin: 0 1rem;
-        }
-    
-        .body-wrapper .container{
-            grid-template-columns: repeat(1, 1fr);
-            justify-items: center;
-        }
-
-        .about .container .about-grid{
-            grid-template-columns: repeat(1, 1fr);
-            justify-items: center;
-        }
-
-        .about .about-text{
-           padding: 1rem 2rem;
-        }
-
-        .about .right-side{
-            padding: 1rem 2rem;
-         }
-        
-        .portfolio .work-list{
-            grid-template-columns: repeat(1, 1fr);
-            justify-items: center;
-            padding: 1rem 0;
-        }
-
-        .contact-me .contact-details{
-            display: block;
-        }
-    
-        .personal-texts , .personal-texts p, .personal-texts .paragraph-me{
-            text-align: center;
-            padding: 0,5rem 1rem;
-        }
-    
-        .about,.portfolio,.contact-me .container{
-            margin: 2rem 0;
-        }
-    
-        .body-wrapper, .about, .container{
-            height: 130vh;
-        }
-
-        .portfolio .container{
-            height: 150vh;
-        }
-    
-        .contact-me .container{
-            height: 20vh;
-        }
-
-        .contact-me .contact-details{
-            justify-content: space-between;
-        }
-    
-        }
